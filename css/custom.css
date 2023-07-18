@@ -248,9 +248,3 @@ h6::before {
 #rightside_config i.fas.fa-cog.fa-spin {
     animation: fa-spin 5s linear infinite;
   }
-
-
-  .loading-img {
-    background: url(hhttps://cdnjson.com/image/Rq5OY) no-repeat center center;
-    background-size: cover;
-  }
