@@ -258,3 +258,232 @@ h6::before {
 [data-theme="dark"] #welcome-info {
   background: #212121;
 }
+
+#article-container h1:before,
+#article-container h2:before,
+#article-container h3:before,
+#article-container h4:before,
+#article-container h5:before,
+#article-container h6:before,
+#post .post-outdate-notice:before,
+.fontawesomeIcon,
+.note:not(.no-icon)::before,
+hr:before {
+    display: inline-block;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    font-family: 'Font Awesome 5 Free';
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased
+}
+#article-container h1:before,
+#article-container h2:before,
+#article-container h3:before,
+#article-container h4:before,
+#article-container h5:before,
+#article-container h6:before {
+    position: absolute;
+    color: #f47466;
+    /* 回形针 */
+    content: '\f0c1';  
+    line-height: 1;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    /* 若要使用风车效果，请去掉下面的注释 */
+    /* content: '\f863'; 
+    animation: avatar_turn_around 1s linear infinite; 
+}
+#article-container h1 {
+    padding-left: 1.4rem
+}
+
+#article-container h1 code {
+    font-size: 1rem
+}
+
+#article-container h1:before {
+    margin-left: -1.3rem;
+    top: calc(50% - .5rem);
+    font-size: 1rem
+}
+
+#article-container h1:hover {
+    padding-left: 1.6rem
+}
+
+#article-container h2 {
+    padding-left: 1.3rem
+}
+
+#article-container h2 code {
+    font-size: .9rem
+}
+
+#article-container h2:before {
+    margin-left: -1.4rem;
+    top: calc(50% - .45rem);
+    font-size: .9rem
+}
+
+#article-container h2:hover {
+    padding-left: 1.5rem
+}
+
+#article-container h3 {
+    padding-left: 1.2rem
+}
+
+#article-container h3 code {
+    font-size: .8rem;
+    top: calc(50% - .4rem);
+
+}
+
+#article-container h3:before {
+    margin-left: -1.2rem;
+    top: calc(50% - .4rem);
+    font-size: .8rem
+}
+
+#article-container h3:hover {
+    padding-left: 1.4rem
+}
+
+#article-container h4 {
+    padding-left: 1.1rem
+}
+
+#article-container h4 code {
+    font-size: .7rem
+}
+
+#article-container h4:before {
+    margin-left: -1rem;
+    top: calc(50% - .35rem);
+    font-size: .7rem
+}
+
+#article-container h4:hover {
+    padding-left: 1.3rem
+}
+
+#article-container h5 {
+    padding-left: 1rem
+}
+
+#article-container h5 code {
+    font-size: .6rem
+}
+
+#article-container h5:before {
+    margin-left: -.8rem;
+    top: calc(50% - .3rem);
+    font-size: .6rem
+}
+
+#article-container h5:hover {
+    padding-left: 1.2rem
+}
+
+#article-container h6 {
+    padding-left: 1rem
+}
+
+#article-container h6 code {
+    font-size: .6rem
+}
+
+#article-container h6:before {
+    margin-left: -.8rem;
+    top: calc(50% - .3rem);
+    font-size: .6rem
+}
+
+#article-container h6:hover {
+    padding-left: 1.2rem
+}
+
+/* 信息卡片头像状态 */
+.card-info-avatar .author-status-box {
+  position: absolute;
+  bottom: 0;
+  left: calc(100% - 28px);
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d0d7de;
+  border-radius: 2em;
+  background-color: #f8f8f8f8;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .card-info-avatar .author-status-box {
+  background-color: #222222f2;
+  border: 1px solid #5c6060;
+}
+
+.card-info-avatar .author-status-box .author-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  padding: 0 5px;
+}
+
+.card-info-avatar .author-status-box:hover {
+  width: 105px;
+}
+
+.card-info-avatar .author-status-box:hover .author-status span {
+  width: 105px;
+  margin-left: 4px;
+}
+
+.card-info-avatar .author-status-box .author-status span {
+  width: 0;
+  font-size: 12px;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 0.4s;
+}
+
+.card-widget .card-info-avatar {
+  display: inline-block;
+  position: relative;
+}
+
+/* 头像呼吸灯 */
+[data-theme="light"] .avatar-img {
+  animation: huxi_light 4s ease-in-out infinite;
+}
+[data-theme="dark"] .avatar-img {
+  animation: huxi_dark 4s ease-in-out infinite;
+}
+@keyframes huxi_light {
+  0% {
+    box-shadow: 0px 0px 1px 1px #e9f5fa;
+  }
+  50% {
+    box-shadow: 0px 0px 5px 5px #e9f5fa;
+  }
+  100% {
+    box-shadow: 0px 0px 1px 1px #e9f5fa;
+  }
+}
+@keyframes huxi_dark {
+  0% {
+    box-shadow: 0px 0px 1px 1px #39c5bb;
+  }
+  50% {
+    box-shadow: 0px 0px 5px 5px #39c5bb;
+  }
+  100% {
+    box-shadow: 0px 0px 1px 1px #39c5bb;
+  }
+}
