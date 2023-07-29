@@ -337,7 +337,7 @@ h6::before {
 
 /* 欢迎信息 */
 #welcome-info {
-  background: linear-gradient(45deg, #b9f4f3, #e3fbf9);
+  background: linear-gradient(45deg,);
   border-radius: 18px;
   padding: 8px;
 }
@@ -380,7 +380,7 @@ hr:before {
     -ms-transition: all .2s ease-out;
     transition: all .2s ease-out;
     /* 若要使用风车效果，请去掉下面的注释 */
-    /* content: '\f863'; 
+    content: '\f863'; 
     animation: avatar_turn_around 1s linear infinite; 
 }
 #article-container h1 {
