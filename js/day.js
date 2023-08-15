@@ -41,12 +41,6 @@ if (m == 10 && dd <= 3) {//国庆节
         sessionStorage.setItem("isPopupWindow", "1");
     }
 }
-if (m == 8 && dd == 15) {//搞来玩的，小日子投降
-    if (sessionStorage.getItem("isPopupWindow") != "1") {
-        Swal.fire("小日子已经投降" + (y - 1945).toString() + "年了😃");
-        sessionStorage.setItem("isPopupWindow", "1");
-    }
-}
 if (m == 1 && dd == 1) {//元旦节
     if (sessionStorage.getItem("isPopupWindow") != "1") {
         Swal.fire(y.toString() + "年元旦快乐！🎉");
