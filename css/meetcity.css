@@ -267,3 +267,352 @@
     }
 }
 /* IPAD菜单栏调整 */
+
+#recent-posts>.recent-post-item {
+    position: relative;
+  }
+  .newPost-left,
+  .newPost-right {
+    position: absolute;
+    top: 12px;
+    color: white;
+    padding: 0 12px;
+    background-color: #49b1f5;
+    box-shadow: 0 8px 12px -3px rgba(73,177,245, .20);
+    border-radius: 6px;
+    border: var(--style-border);
+    letter-spacing: 1px;
+  }
+  .newPost-left {
+    left: 12px;
+  }
+  .newPost-right {
+    right: 12px;
+  }
+  /* PC端样式 */
+  @media screen and (max-width: 768px) {
+    .newPost-left,
+    .newPost-right {
+        top: -4px;
+        padding: 0 18px;
+        border-radius: 0 0 8px 8px;
+    }
+    .newPost-left {
+      left: calc(100% / 2 - 50px);
+    }
+    .newPost-right {
+      right: calc(100% / 2 - 50px);
+    }
+  }
+  /* PE端样式 */
+  
+  /* 最新文章图标样式 */
+  
+  .layout{
+    width: 100%;
+    max-width:1400px;
+}
+/* 重新定义宽度 */
+
+.layout > div:first-child {
+    width: 100%;
+}
+#post {
+    width: 78%;
+}
+.aside-content {
+    max-width: 312px;
+    min-width: 300px;
+}
+.layout.hide-aside {
+    max-width: 1400px;
+}
+/* 定义是否侧边栏的宽度 */
+
+#recent-posts > .recent-post-item {
+    height: 19em;
+    border: var(--style-border);
+}
+#recent-posts > .recent-post-item >.recent-post-info {
+    padding: 0 56px;
+    width: 64%;
+}
+@media screen and (max-width: 768px) {
+    #recent-posts > .recent-post-item {
+        height: auto;
+    }
+    #recent-posts > .recent-post-item >.recent-post-info {
+        padding: 20px 20px 30px;
+        width: 100%;
+        text-align: center;
+    }
+}
+/* 主页文章列表图片宽度 */
+
+#footer {
+    background: var(--icat-footer-background);
+}
+  
+#footer #footer-wrap {
+    color: var(--font-color)
+}
+  
+#footer #footer-wrap a {
+    color: var(--font-color)
+}
+
+/* 页脚透明 */
+  
+#recent-posts > .recent-post-item .post_cover {
+    position: relative;
+}
+#recent-posts>.recent-post-item .post_cover::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.5);
+    content: '';
+    -webkit-transition: -webkit-transform .3s;
+    -moz-transition: -moz-transform .3s;
+    -o-transition: -o-transform .3s;
+    -ms-transition: -ms-transform .3s;
+    transition: transform .3s;
+    -webkit-transform: scale3d(2,1,1) rotate(60deg) translate3d(15%,-150%,0);
+    -moz-transform: scale3d(2,1,1) rotate(60deg) translate3d(15%,-150%,0);
+    -o-transform: scale3d(2,1,1) rotate(60deg) translate3d(15%,-150%,0);
+    -ms-transform: scale3d(2,1,1) rotate(60deg) translate3d(15%,-150%,0);
+    transform: scale3d(2,1,1) rotate(60deg) translate3d(15%,-150%,0);
+}
+#recent-posts>.recent-post-item .post_cover:hover::after {
+    -webkit-transform: scale3d(2,1,1) rotate(60deg) translate3d(0,130%,0);
+    -moz-transform: scale3d(2,1,1) rotate(60deg) translate3d(0,130%,0);
+    -o-transform: scale3d(2,1,1) rotate(60deg) translate3d(0,130%,0);
+    -ms-transform: scale3d(2,1,1) rotate(60deg) translate3d(0,130%,0);
+    transform: scale3d(2,1,1) rotate(60deg) translate3d(0,130%,0);
+}
+
+/* 文章卡片擦亮动画 */
+
+.flink-item-icon {
+    margin-right: 0 !important;
+    transition: .5s !important;
+  }
+  /* 头像微调 */
+  
+  #article-container .flink .flink-list>.flink-list-item::before {
+    content: none;
+  }
+  /* 去掉原来自带的before */
+  
+  #article-container .flink .flink-list>.flink-list-item:hover {
+    background-color: #49B1F5;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    transition: 0.5s;
+  }
+  /* 鼠标经过改变背景 */
+  
+  #article-container .flink .flink-list>.flink-list-item:hover a {
+    color: white !important;
+  }
+  /* 鼠标经过改变文字颜色 */
+  
+  #article-container .flink .flink-list>.flink-list-item:hover .flink-item-icon {
+    width: 60px;
+    margin-left: -70px;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  @media screen and (max-width: 900px){
+    #article-container .flink .flink-list>.flink-list-item:hover .flink-item-icon {
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    #article-container .flink .flink-list>.flink-list-item:hover .flink-item-tag {
+      display: none;
+    }
+  }
+  /* 鼠标经过头像滚动 */
+  
+  #article-container .flink .flink-list > .flink-list-item a .flink-item-icon {
+    margin: 26px 21px;
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+  }
+  #article-container .flink .flink-list > .flink-list-item a {
+    display: block;
+    height: 100%;
+  }
+  #article-container .flink .flink-item-name {
+    text-align: start;
+    padding: 40px 12px 0;
+    height: auto;
+  }
+  #article-container .flink .flink-item-desc {
+    text-align: start;
+    padding: 10px 12px 0;
+    height: auto;
+  }
+  .flink-item-tag {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 2px 6px;
+    color: var(--icat-white);
+    z-index: 1;
+    border-radius: 6px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    transition: 0.3s;
+    font-size: 0.6rem;
+    opacity: .8;
+  }
+  /* 友联推荐Tag */
+  
+  /* PC端友联页样式 */
+  
+  #article-container .flink > h2 {
+    margin: 20px 7px 0;
+  }
+  #article-container .flink .flink-desc {
+    margin: 0 7px;
+    color: var(--icat-secondtext);
+  }
+  #article-container .flink .flink-list {
+    padding: 10px 0 0;
+  }
+  #article-container .flink .flink-list > .flink-list-item {
+    border: 1px solid var(--icat-secondbg) !important;
+    background: var(--icat-card-bg);
+    height: 120px;
+    margin: 8px 8px;
+    width: calc(100% / 4 - 16px);
+  }
+  @media screen and (max-width: 900px){
+    #article-container .flink .flink-list > .flink-list-item {
+      height: 110px;
+    }
+    #article-container .flink .flink-list > .flink-list-item {
+      border: 2px solid var(--icat-secondbg) !important;
+    }
+    #article-container .flink .flink-list {
+      padding: 10px 0 0;
+    }
+    #article-container .flink .flink-list > .flink-list-item {
+      margin: 6px 6px;
+      width: calc(50% - 12px) !important;
+    }
+    #article-container .flink > h2 {
+      margin: 20px 12px 0;
+    }
+    #article-container .flink .flink-desc {
+      margin: 0 12px;
+    }
+    #article-container .flink .flink-item-name {
+      font-size: 1.1rem;
+      padding: 30px 12px 0;
+    }
+    #article-container .flink .flink-list > .flink-list-item a .flink-item-icon {
+      position: absolute;
+      bottom: -30%;
+      right: 0;
+      float: right;
+      width: 100px;
+      height: 100px;
+      -webkit-transform: translate(35%,30%); 
+      -moz-transform: translate(35%,30%);
+      -o-transform: translate(35%,30%);
+      -ms-transform: translate(35%,30%);
+      transform: translate(35%,30%);
+      margin-top: -12px;
+      margin-left: -12px;
+      border-radius: 26px;
+      opacity: .2;
+    }
+    .flink-item-tag {
+      top: 8px;
+      right: 8px;
+    }
+  }
+  /* PE端友联页样式 */
+  
+  /* iCat新友链样式 */
+
+  #article-container .flink .flink-list > .flink-list-item.mini {
+    height: 60px;
+    width: calc(100% / 6 - 16px);
+  }
+  #article-container .flink .flink-list > .flink-list-item.fnull {
+    height: 40px;
+    width: auto !important;
+  }
+  #article-container .flink .flink-list > .flink-list-item.mini a .flink-item-icon {
+    margin: 9px 9px;
+    width: 40px;
+    height: 40px;
+  }
+  #article-container .flink .flink-list>.flink-list-item.mini:hover .flink-item-icon {
+    width: 40px;
+    margin-left: -70px;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  #article-container .flink .flink-list>.flink-list-item.mini .flink-item-name {
+    padding: 21px 12px;
+    font-size: 1.23em;
+  }
+  #article-container .flink .flink-list>.flink-list-item.fnull .flink-item-name {
+    padding: 10px 16px;
+    font-size: 1.13em;
+  }
+  @media screen and (max-width: 900px) {
+    #article-container .flink .flink-list > .flink-list-item.mini {
+      width: calc(100% / 3 - 12px) !important;
+    }
+    #article-container .flink .flink-list > .flink-list-item.mini a .flink-item-icon {
+      bottom: 0;
+      width: 60px;
+      height: 60px;
+      -webkit-transform: translate(35%,50%);
+      -moz-transform: translate(35%,50%);
+      -o-transform: translate(35%,50%);
+      -ms-transform: translate(35%,50%);
+      transform: translate(35%,50%);
+      border-radius: 50%;
+    }
+    #article-container .flink .flink-list>.flink-list-item.mini:hover .flink-item-icon {
+      bottom: -2px;
+      right: 6px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    #article-container .flink .flink-list>.flink-list-item.mini .flink-item-name {
+      font-size: 1.13em;
+    }
+    #article-container .flink .flink-list>.flink-list-item.fnull .flink-item-name {
+      font-size: 1em;
+    }
+  }
+  /* mini友联栏样式 */
