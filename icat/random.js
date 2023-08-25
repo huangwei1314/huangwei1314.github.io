@@ -1,1 +1,0 @@
-var posts=["post/100a1970.html","post/81b443e3.html","post/b23cd813.html","post/e714ea6d.html","post/79e160e.html","post/1ce2907b.html","post/6dbd6104.html","post/313abb0c.html","post/b2f5ff3e.html","post/412c726.html","post/56558b2b.html"];function toRandomPost(){window.open('/'+posts[Math.floor(Math.random() * posts.length)],"_self");};
