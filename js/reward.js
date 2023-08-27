@@ -15,7 +15,7 @@ function reward(){
       Swal.fire({
         title: '感谢您',
         html: '请打开支付宝 <b>[扫一扫]</b> 以充电',
-        imageUrl: '/media/alipay.webp',
+        imageUrl: 'https://yife68.gitee.io/icat-pic-2022/03/19/alipay.jpg',
         imageWidth: 175,
         imageHeight: 175,
         imageAlt: 'Custom image'
@@ -32,7 +32,7 @@ function reward(){
       Swal.fire({
         title: '感谢您',
         html: '请打开微信 <b>[扫一扫]</b> 以充电',
-        imageUrl: '/media/wechat.webp',
+        imageUrl: 'https://yife68.gitee.io/icat-pic-2022/03/19/wechat.jpg',
         imageWidth: 175,
         imageHeight: 175,
         imageAlt: 'Custom image'
