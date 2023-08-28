@@ -6248,9 +6248,9 @@ blockquote.pullquote.right {
 #gitcalendar {
     margin: 0 auto;
     border-radius: 24px;
-    background: var(#616161);
-    border: var(#616161);
-    box-shadow: var(#616161);
+    background: #6d6363;
+    border: #6ac8a8;
+    box-shadow: #2c4632;
     position: relative;
     padding: 1rem 2rem;
     overflow: hidden;
@@ -6272,7 +6272,7 @@ blockquote.pullquote.right {
     overflow: visible;
     height: auto !important;
     min-height: 16px;
-    color: #666;
+    color: #3e3b3b;
   }
   
   #web_bg ~ .page:has(#about-page) {
@@ -6302,7 +6302,7 @@ blockquote.pullquote.right {
     background: #6bdf8f;
     position: absolute;
     border-radius: 50%;
-    border: 6px solid var(#616161);
+    border: 6px solid #343434;
     top: 50%;
     left: 50%;
     transform: translate(35px, 45px);
@@ -6330,9 +6330,9 @@ blockquote.pullquote.right {
   .author-content-item {
     width: 49%;
     border-radius: 24px;
-    background: var(#616161);
-    border: var(#616161);
-    box-shadow: var(#616161);
+    background: #212020;
+    border: #4e27b3;
+    box-shadow: #937b7b;
     position: relative;
     padding: 1rem 2rem;
     overflow: hidden;
@@ -7087,7 +7087,7 @@ blockquote.pullquote.right {
     border: var(--style-border-always);
     width: calc((100% / 3) - 0.5rem);
     margin: 0 0.25rem 0.5rem 0.25rem;
-    box-shadow: var(#616161r);
+    box-shadow: var(#D8BFD8);
   }
   
   .reward-list-item .reward-list-item-name {
