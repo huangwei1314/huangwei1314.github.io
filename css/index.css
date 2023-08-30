@@ -6610,7 +6610,7 @@ blockquote.pullquote.right {
   #about-page .about-statistic {
     min-height: 380px;
     width: 39%;
-    background: url(https://img.443.lol/i/2023/08/26/y1weoz.webp) no-repeat top;
+    background: url(https://imgs.443.lol/file/f403a2ed63e97003e6804.jpg) no-repeat top;
     background-size: cover;
     color: var(#616161);
     overflow: hidden;
@@ -6769,7 +6769,7 @@ blockquote.pullquote.right {
   }
   
   .author-content-item.map {
-    background: url(https://img.443.lol/i/2023/08/26/ytcdda.webp) no-repeat center;
+    background: url(https://imgs.443.lol/file/adf4c8628eedd17d60320.png) no-repeat center;
     min-height: 160px;
     max-height: 400px;
     position: relative;
@@ -6780,7 +6780,7 @@ blockquote.pullquote.right {
     transition: 1s ease-in-out;
   }
   [data-theme="dark"] .author-content-item.map {
-    background: url(https://img.443.lol/i/2023/08/26/ytcdda.webp) no-repeat center;
+    background: url(https://imgs.443.lol/file/adf4c8628eedd17d60320.png) no-repeat center;
     background-size: 100%;
   }
   
@@ -7080,7 +7080,7 @@ blockquote.pullquote.right {
     transition: 2s ease-in-out;
   }
   .author-content-item.game-yuanshen {
-    background: url(https://img.443.lol/i/2023/08/26/yvpmtb.webp) no-repeat top;
+    background: url(https://imgs.443.lol/file/c5a04c3349306232839c6.jpg) no-repeat top;
     background-size: cover;
     min-height: 300px;
     overflow: hidden;
@@ -7104,7 +7104,7 @@ blockquote.pullquote.right {
     margin-right: 0.5rem;
   }
   .icon-pos-mid {
-    background: url(https://img.443.lol/i/2023/08/26/yvpmtb.webp);
+    background: url(https://imgs.443.lol/file/c5a04c3349306232839c6.jpg);
   }
   .author-content-item.game-yuanshen::after {
     box-shadow: 0 -69px 203px 11px #575d8b inset;
@@ -7118,7 +7118,7 @@ blockquote.pullquote.right {
   
   .author-content-item.comic-content {
     width: 39%;
-    background: url(https://img.443.lol/i/2023/08/26/yx4snk.webp) no-repeat top;
+    background: url(https://imgs.443.lol/file/e092e4ddf88649113d38f.jpg) no-repeat top;
     background-size: cover;
     min-height: 300px;
     overflow: hidden;
@@ -7135,14 +7135,14 @@ blockquote.pullquote.right {
   }
   
   .author-content-item.like-technology {
-    background: url(https://img.443.lol/i/2023/08/26/z87yp8.webp) no-repeat;
+    background: url(https://imgs.443.lol/file/b416152127ff96e12d47f.jpg) no-repeat;
     background-size: cover;
     min-height: 230px;
     color: var(#616161);
   }
   
   .author-content-item.like-music {
-    background: url(https://img.443.lol/i/2023/08/26/yzvj57.webp) no-repeat top;
+    background: url(https://imgs.443.lol/file/38a5d43525e756dd28816.jpg) no-repeat top;
     background-size: cover;
     min-height: 400px;
     color: var(#616161);
