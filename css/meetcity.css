@@ -676,6 +676,12 @@
   }
   /* PE端友联页样式 */
 
+  /* Heo同款loading动画 */
+  .loading-img {
+    background: url(https://img.443.lol/i/2023/09/16/10khwb8.webp) no-repeat center center;
+    background-size: cover;
+  }
+
 
   :root {
     --icat-white: #fff;
